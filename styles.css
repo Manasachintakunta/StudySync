@@ -187,6 +187,7 @@ body{
 @media screen and (min-width:750px){
     .mainsection{
          flex-direction: row;
+         align-content:space-between;
     }
     .contl{
         text-align: left;
@@ -228,5 +229,69 @@ body{
 .b2:hover{
     background-color:var(--gray);
     cursor: pointer;
+}
+}
+.company{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top:3rem;
+    animation: slidefromleft 1.5s ease forwards; 
+} 
+
+.comp-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: var(--light-gray);
+    margin-top:3rem;
+    padding: 2rem;
+    width:330px;
+    height:80px;
+    border: none;
+    border-radius: 1.6rem;
+    place-items:center;
+    gap:2.4rem;
+    
+} 
+
+.complogo{
+    display:flex;
+    justify-content: center;
+    gap:0.5rem;
+}
+.svg{
+    height:30px;
+    width: 30px;
+    background-color: var(--light-gray);
+}
+.logotxt{
+    color: var(--dark-gray);
+    font-size: 1rem;
+    font-weight: 400;
+}
+@media screen and (min-width:750px){
+    .comp-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color: var(--light-gray);
+    margin-top:3rem;
+    padding: 2rem;
+    width:850px;
+    height:40px;
+    border: none;
+    border-radius: 1.6rem;
+    place-items:center;
+    gap:2.4rem;
+    animation: slidefromleft 1.5s ease forwards; 
+} 
+}
+.logotxt{
+    color: var(--dark-gray);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.company h2{
+    font-size: 2rem;
 }
 }
