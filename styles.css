@@ -80,7 +80,7 @@ body{
 }
     
 }
-menu-button{
+/* .menu-button{
   display: none;
   border:none;
   border-radius: 0.375rem;
@@ -99,4 +99,23 @@ menu-button{
 .menu-icon{
     height: 1.5rem;
     width: 1.5rem;
+} */
+
+.btni{
+    height:1.5rem;
+    width: 1.5rem;
 }
+.btn{
+    display:none;
+    background-color: var(--background-color);
+    font-weight: 600;
+    font-size:1rem;
+    padding: 0.5rem 0.9rem;
+    border: none;
+    border-radius: 0.375rem;
+}
+@media screen and (max-width:768px) {
+    .btn{
+        display: block;
+      }
+    }
