@@ -111,7 +111,7 @@ body{
 .contl{
     gap:2rem;
     text-align: center;
-     opacity: 0;
+    opacity: 0;
     animation: slidefromleft 1.5s ease forwards; 
 } 
 @keyframes slidefromleft {
@@ -294,4 +294,88 @@ body{
 .company h2{
     font-size: 2rem;
 }
+.feature-contain {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    background-color: var(--light-gray);
+    margin-top: 2rem;
+    padding: 2rem 1rem;
+}
+.featcont{
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 2rem;
+}
+.maincont{
+    display: flex;
+    gap:1.5rem;
+    flex-direction: column;
+}
+.maincont h2{
+    font-size: 2rem;
+}
+.maincont p{
+     color: #808080;
+     font-size:1rem;
+     margin-bottom: 2rem;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 5rem;
+    column-gap: 4rem;
+    place-content: center;
+}
+.icon{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+}
+.istyl{
+    height: 1.5rem;
+    width: 31.5rem0px;
+}
+
+.fcard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:200px;
+    width: 350px;
+    border-radius: 2rem;
+    gap:1.5rem;
+    padding: 0.5rem;
+}
+.cardinfo h3{
+    margin-bottom: 1.5rem;
+    color: white;
+}
+.cardinfo p{
+    color: white;
+    font-size: 1.0rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.fcard:nth-child(6){
+     background-color:#ff6289;
+}
+.fcard:nth-child(2){
+     background-color:#fcbf58;
+}
+.fcard:nth-child(3){
+     background-color:#44bfc3;
+}
+.fcard:nth-child(4){
+     background-color:#77b05d;
+}
+.fcard:nth-child(5){
+     background-color:#7d78b1;
+}
+.fcard:nth-child(1){
+     background-color:#4a90e2;
 }
